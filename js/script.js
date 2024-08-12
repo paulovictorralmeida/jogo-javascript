@@ -19,6 +19,7 @@ const loop = setInterval(() => {
 
     player.style.animation = 'none';
     player.style.bottom = `${playerPosition}px`;
+    player.src = "./images/cubo_gameover.png"
 
     clearInterval(loop);
   }
