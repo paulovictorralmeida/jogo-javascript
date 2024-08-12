@@ -11,9 +11,17 @@
   </head>
   <body>
     <div class="game-board">
+      <p class="jump-count">Score:<span id="jump-count">0</span></p>
       <img src="./images/cloud2.png" class="cloud">
       <img src="./images/cubo.png" class="player">
       <img src="./images/cano.png" class="pipe">
+      <button class="start" onclick="startGame()">Iniciar</button>
+    </div>
+
+    <div class="game-over">
+      <h1>Game Over</h1>
+      <button onclick="restartGame()">Reiniciar</button>
+      <p>Placar Final: <span id="jump-final">0</span></p>
     </div>
   </body>
 

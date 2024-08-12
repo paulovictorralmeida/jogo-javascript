@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.game-board {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 30px solid #F5DEB3;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#B0C4DE, #4682B4, #191970);
+}
+
 button {
   background: purple;
   font-weight: bold;
@@ -41,16 +51,6 @@ button:hover {
   margin-top: 15rem;
 }
 
-.game-board {
-  width: 100%;
-  height: 100vh;
-  border-bottom: 30px solid #F5DEB3;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(#B0C4DE, #4682B4, #191970);
-}
-
 .cloud {
   position: absolute;
   width: 250px;
@@ -62,13 +62,16 @@ button:hover {
   bottom: 0;
   width: 80px;
   right: -80px;
-  animation: pipe-animation 1.5s infinite linear
 }
 
 .player {
   position: absolute;
   bottom: 0;
   width: 40px;
+}
+
+.pipe-animation {
+  animation: pipe-animation 1.5s infinite linear
 }
 
 .jump {
