@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  width: 40%;
+  height: 500px;
+  border-bottom: 30px solid #F5DEB3;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#B0C4DE, #4682B4, #191970);
+}
+
+.cloud {
+  position: absolute;
+  width: 250px;
+  animation: cloud-animation 20s infinite linear
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  right: -80px;
+  animation: pipe-animation 2s infinite linear
+}
+
+@keyframes cloud-animation {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
